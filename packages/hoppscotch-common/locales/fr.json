@@ -71,7 +71,13 @@
     "verify": "Vérifier",
     "enable": "Activer",
     "disable": "Désactiver",
-    "assign": "Assigner"
+    "assign": "Assigner",
+    "clear_response": "Effacer la réponse",
+    "open": "Ouvrir",
+    "add_example": "Ajouter un exemple",
+    "invalid_request": "Données de requête invalides",
+    "sort": "Trier",
+    "unpublish": "Dépublier"
   },
   "activity_logs": {
     "ACTIVITY_LOG_DELETE": "Le journal des activités a bien été supprimé",
@@ -172,7 +178,9 @@
     "no_name": "Sans nom",
     "open_navigation": "Ouvrir la navigation",
     "read_documentation": "Lire la documentation",
-    "default": "Par défaut: {value}"
+    "default": "Par défaut: {value}",
+    "downloads": "Téléchargements",
+    "powered_by": "Propulsé par Hoppscotch"
   },
   "auth": {
     "account_deactivated": "Votre compte a été désactivé. Contactez votre administrateur pour récupérer votre accès.",
@@ -345,7 +353,8 @@
     "select": "Sélectionner une collection",
     "select_location": "Sélectionner l'emplacement",
     "details": "Détails",
-    "duplicated": "Collection dupliquée"
+    "duplicated": "Collection dupliquée",
+    "sorted": "Collection triée"
   },
   "confirm": {
     "close_unsaved_tab": "Voulez-vous vraiment fermer cet onglet ?",
@@ -365,12 +374,15 @@
     "request_change": "Voulez-vous vraiment annuler les modifications effectuées pour la requête actuelle ? Les changements non sauvegardés seront perdus.",
     "save_unsaved_tab": "Voulez-vous enregistrer les changements effectués dans cet onglet ?",
     "sync": "Voulez-vous restaurer votre espace de travail depuis le cloud ? Cela va écraser les modifications de la version locale de votre espace de travail.",
-    "delete_access_token": "Voulez-vous vraiment supprimer le jeton d'authentification {tokenLabel} ?"
+    "delete_access_token": "Voulez-vous vraiment supprimer le jeton d'authentification {tokenLabel} ?",
+    "delete_mock_server": "Êtes-vous sûr de vouloir supprimer ce serveur mock ?"
   },
   "context_menu": {
     "add_parameters": "Ajouter aux paramètres",
     "open_request_in_new_tab": "Ouvrir la requête dans un nouvel onglet",
-    "set_environment_variable": "Ajouter en tant que variable d'environnement"
+    "set_environment_variable": "Ajouter en tant que variable d'environnement",
+    "encode_uri_component": "Encoder le composant d'URL",
+    "decode_uri_component": "Décoder le composant d'URL"
   },
   "cookies": {
     "modal": {
@@ -387,7 +399,12 @@
       "new_domain_name": "Nouveau nom de domaine",
       "no_cookies_in_domain": "Aucun cookie pour ce domaine",
       "raw_tab": "Brut",
-      "set": "Ajouter un cookie"
+      "set": "Ajouter un cookie",
+      "invalid_domain": "Le domaine contient des caractères invalides",
+      "host_only": "HostOnly",
+      "host_only_info": "Envoyé uniquement à l'hôte qui l'a défini. Les sous-domaines ne le reçoivent pas.",
+      "http_only": "HttpOnly",
+      "http_only_info": "Non exposé aux scripts de la page. Toujours envoyé pour les requêtes correspondantes."
     }
   },
   "count": {
@@ -404,7 +421,183 @@
   },
   "documentation": {
     "generate": "Générer la documentation",
-    "generate_message": "Importer une collection Hoppscotch pour générer directement la documentation d'API associée."
+    "generate_message": "Importer une collection Hoppscotch pour générer directement la documentation d'API associée.",
+    "add_description": "Ajoutez ici une description pour cette collection...",
+    "add_description_placeholder": "Ajoutez une description ici...",
+    "add_request_description": "Ajoutez ici une description pour la requête...",
+    "auth": {
+      "access_key": "Clé d'accès",
+      "access_token": "Jeton d'accès",
+      "add_to": "Ajouter à",
+      "akamai_edgegrid": "Akamai EdgeGrid",
+      "algorithm": "Algorithme",
+      "api_key": "Clé API",
+      "app_id": "ID d'application",
+      "auth_id": "ID d'authentification",
+      "auth_key": "Clé d'authentification",
+      "auth_url": "URL d'authentification",
+      "aws_signature": "Signature AWS",
+      "basic_auth": "Authentification basique",
+      "bearer_token": "Jeton Bearer",
+      "client_id": "ID client",
+      "client_nonce": "Nonce client",
+      "client_secret": "Secret client",
+      "client_token": "Jeton client",
+      "delegation": "Délégation",
+      "digest_auth": "Authentification Digest",
+      "extra_data": "Données supplémentaires",
+      "grant_type": "Type de grant",
+      "hawk_auth": "Authentification HAWK",
+      "headers_to_sign": "En-têtes à signer",
+      "host": "Hôte",
+      "include_payload_hash": "Inclure le hash du payload",
+      "jwt_auth": "Authentification JWT",
+      "max_body_size": "Taille maximale du corps",
+      "no_auth": "Aucune authentification",
+      "nonce": "Nonce",
+      "oauth_2": "OAuth 2.0",
+      "opaque": "Opaque",
+      "password": "Mot de passe",
+      "payload": "Payload",
+      "qop": "QOP",
+      "realm": "Realm",
+      "region": "Région",
+      "scope": "Scope",
+      "secret_key": "Clé secrète",
+      "service_name": "Nom du service",
+      "timestamp": "Horodatage",
+      "title": "Authentification",
+      "token_url": "URL du jeton",
+      "user": "Utilisateur",
+      "username": "Nom d'utilisateur"
+    },
+    "body": {
+      "content_type": "Type de contenu",
+      "no_body": "Aucun corps défini",
+      "title": "Corps"
+    },
+    "copied_to_clipboard": "Copié dans le presse-papiers !",
+    "copy_to_clipboard": "Copier dans le presse-papiers",
+    "curl": {
+      "click_to_load": "Cliquez pour charger la commande cURL",
+      "copied": "Commande cURL copiée dans le presse-papiers !",
+      "copy_to_clipboard": "Copier dans le presse-papiers",
+      "generating": "Génération de la commande cURL...",
+      "load": "Charger le cURL",
+      "title": "cURL"
+    },
+    "description": "Description",
+    "error_rendering_markdown": "Erreur lors du rendu du markdown :",
+    "fetching_documentation": "Récupération de la documentation...",
+    "headers": {
+      "no_headers": "Aucun en-tête défini",
+      "title": "En-têtes"
+    },
+    "hide_all_documentation": "Masquer toute la documentation",
+    "inherited_from": "Hérité de {name}",
+    "inherited_with_type": "{type} hérité de {name}",
+    "key": "Clé",
+    "loading": "Chargement...",
+    "loading_collection_data": "Chargement des données de la collection...",
+    "no": "Non",
+    "no_collection_data": "Aucune donnée de collection disponible",
+    "no_documentation_found": "Aucune documentation trouvée pour les dossiers ou les requêtes",
+    "no_request_data": "Aucune donnée de requête disponible",
+    "no_requests_or_folders": "Aucune requête ni dossier",
+    "no_write_access": "Vous n'avez pas d'accès en écriture à cette documentation",
+    "not_set": "Non défini",
+    "open_request_in_new_tab": "Ouvrir la requête dans un nouvel onglet",
+    "parameters": {
+      "no_params": "Aucun paramètre défini",
+      "title": "Paramètres"
+    },
+    "percent_complete": "% terminé",
+    "processing_documentation": "Traitement de la documentation",
+    "publish": {
+      "already_published": "Cette collection est déjà publiée",
+      "auto_sync": "Synchronisation automatique avec la collection",
+      "auto_sync_description": "Mettre à jour automatiquement la documentation publiée lorsque la collection change",
+      "button": "Publier",
+      "copy_url": "Copier l'URL",
+      "delete": "Supprimer la documentation",
+      "delete_error": "Échec de la suppression de la documentation publiée",
+      "unpublish_doc": "Êtes-vous sûr de vouloir dépublier la documentation ?",
+      "delete_success": "Documentation publiée supprimée avec succès",
+      "doc_title": "Titre",
+      "doc_version": "Version",
+      "edit_published_doc": "Modifier le document publié",
+      "last_updated": "Dernière mise à jour",
+      "metadata": "Métadonnées (JSON)",
+      "open_published_doc": "Ouvrir la documentation publiée dans un nouvel onglet",
+      "publish_error": "Échec de la publication de la documentation",
+      "publish_success": "Documentation publiée avec succès !",
+      "published": "Publié",
+      "published_url": "URL publiée",
+      "title": "Publier la documentation",
+      "update_button": "Mettre à jour",
+      "update_error": "Échec de la mise à jour de la documentation",
+      "update_published_docs": "Mettre à jour les documents publiés",
+      "update_success": "Documentation mise à jour avec succès !",
+      "unpublish": "Dépublier",
+      "update_title": "Mettre à jour la documentation publiée",
+      "url_copied": "URL copiée dans le presse-papiers !",
+      "view_published": "Voir les documents publiés",
+      "view_title": "Instantané de la documentation publiée",
+      "versions": "Versions",
+      "create_new_version": "Créer une nouvelle version",
+      "invalid_version": "La version ne doit contenir que des caractères alphanumériques, des points et des tirets",
+      "live": "En direct",
+      "snapshot": "Instantané",
+      "version_immutable": "Les versions publiées sont des instantanés en lecture seule",
+      "view_snapshot": "Voir l'instantané",
+      "current_version": "ACTUELLE",
+      "not_found": "Documentation publiée introuvable",
+      "no_doc_id": "Aucun identifiant de document fourni",
+      "version_label": "v{version}",
+      "unpublish_version": "Dépublier cette version",
+      "loading_snapshot": "Chargement de l'instantané...",
+      "retry_snapshot": "Réessayer",
+      "sensitive_data_warning": "Veuillez vous assurer qu'aucune donnée sensible n'est exposée dans la documentation publiée.",
+      "snapshot_preview": "Aperçu de l'instantané",
+      "snapshot_load_error": "Échec du chargement de l'aperçu de l'instantané",
+      "snapshot_empty": "Aucune requête ni dossier dans cet instantané",
+      "snapshot_item_count": "{count} éléments",
+      "auto_sync_live_notice": "Cette version se synchronise automatiquement avec la collection en direct",
+      "snapshot_promote_warning": "L'activation de la synchronisation automatique remplacera cet instantané figé par l'arborescence de la collection en direct. Cette action est irréversible.",
+      "live_freeze_notice": "La synchronisation automatique sera désactivée et cette version sera figée à l'état actuel de la collection.",
+      "untitled_project": "Projet sans titre",
+      "environment": "Environnement",
+      "no_environment": "Aucun environnement",
+      "environment_description": "Joindre un environnement pour résoudre les variables dans la documentation publiée"
+    },
+    "request_opened_in_new_tab": "Requête ouverte dans un nouvel onglet !",
+    "response": {
+      "body": "Corps de la réponse",
+      "copy": "Copier la réponse",
+      "example_copied": "Exemple de réponse copié dans le presse-papiers !",
+      "example_copy_failed": "Échec de la copie de l'exemple de réponse",
+      "headers": "En-têtes de la réponse",
+      "no_examples": "Aucun exemple de réponse disponible",
+      "title": "Exemples de réponse"
+    },
+    "save_error": "Erreur lors de l'enregistrement de la documentation",
+    "save_success": "Documentation enregistrée avec succès",
+    "saved_items_status": "{success} éléments enregistrés. Échec de l'enregistrement de {failure} éléments.",
+    "show_all_documentation": "Afficher toute la documentation",
+    "source": "Source",
+    "title": "Documentation",
+    "unsaved_changes": "Vous avez {count} modifications non enregistrées. Veuillez enregistrer avant de fermer.",
+    "untitled_collection": "Collection sans titre",
+    "untitled_request": "Requête sans titre",
+    "value": "Valeur",
+    "query": {
+      "title": "Requête"
+    },
+    "variables": {
+      "no_vars": "Aucune variable définie",
+      "title": "Variables"
+    },
+    "yes": "Oui"
   },
   "empty": {
     "activity_logs": "Aucune entrée de journalisation d'activité trouvée",
@@ -436,7 +629,9 @@
     "teams": "Vous n'appartenez à aucun espace de travail",
     "tests": "Aucun test pour cette requête",
     "access_tokens": "Les jetons d'authentification sont vides",
-    "response": "Aucune réponse reçue"
+    "response": "Aucune réponse reçue",
+    "collection_variables": "Les variables de collection sont vides",
+    "mock_servers": "Aucun serveur mock trouvé"
   },
   "environment": {
     "heading": "Environnement",
@@ -571,7 +766,8 @@
     "fetching_access_tokens_list": "Une erreur est survenue lors de la récupération de la liste des jetons",
     "generate_access_token": "Une erreur est survenue lors de la génération du jeton d'authentification",
     "delete_access_token": "Une erreur est survenue lors de la suppression du jeton d'authentification",
-    "extension_not_found": "Extension non trouvée"
+    "extension_not_found": "Extension non trouvée",
+    "invalid_request": "Données de requête invalides"
   },
   "export": {
     "as_json": "Exporter en JSON",
@@ -581,7 +777,16 @@
     "secret_gist_success": "Export en Gist secret réussi",
     "require_github": "Connectez-vous avec GitHub pour créer un Gist secret",
     "title": "Exporter",
-    "success": "Export réussi"
+    "success": "Export réussi",
+    "as_openapi": "Exporter en OpenAPI",
+    "as_yaml": "Exporter en YAML",
+    "choose_format": "Choisir le format d'exportation",
+    "collection": "Exporter la collection",
+    "collections": "Exporter les collections",
+    "format_hoppscotch": "Exporter en Hoppscotch JSON",
+    "format_openapi_json": "Exporter en OpenAPI 3.1 (JSON)",
+    "format_openapi_yaml": "Exporter en OpenAPI 3.1 (YAML)",
+    "openapi_lossy_summary": "L'exportation OpenAPI perd les scripts, les identifiants d'authentification, les éléments inactifs, les chemins en double et les codes de statut de réponse en double."
   },
   "filename": {
     "cookie_key_value_pairs": "Cookie",
@@ -603,7 +808,8 @@
     "name_length_insufficient": "Le nom du dossier doit avoir au moins 3 caractères",
     "new": "Nouveau dossier",
     "run": "Exécuter le dossier",
-    "renamed": "Dossier renommé"
+    "renamed": "Dossier renommé",
+    "sorted": "Dossier trié"
   },
   "graphql": {
     "arguments": "Arguments",
@@ -621,7 +827,13 @@
     "subscriptions": "Abonnements",
     "switch_connection": "Changer de connexion",
     "url_placeholder": "Entrer l'URL d'un point de terminaison GraphQL",
-    "query": "Requête"
+    "query": "Requête",
+    "connection_error_introspection_disabled": "L'introspection est désactivée sur ce serveur.",
+    "connection_error_invalid_json": "La réponse d'introspection n'est pas un JSON valide — le point de terminaison n'est peut-être pas un serveur GraphQL.",
+    "operation_error": "Une erreur s'est produite lors de l'exécution de l'opération",
+    "subscription_log": "Journal des abonnements",
+    "subscribing": "Connexion au point de terminaison d'abonnement…",
+    "waiting_for_events": "Abonné. En attente d'événements…"
   },
   "graphql_collections": {
     "title": "Collections GraphQL"
@@ -647,7 +859,8 @@
     "pre_request_script": "Les scripts post-requête sont écrits en JavaScript et sont exécutés avant que la requête ne soit envoyée.",
     "script_fail": "Il semblerait qu'il y ait un bug dans le script de pré-requête. Veuillez vérifier l'erreur ci-dessous et corrigez le script en conséquence.",
     "post_request_script_fail": "Il semblerait qu'il y ait une erreur avec le script de post-requête. Veuillez corriger les erreurs et relancez les tests à nouveau",
-    "post_request_script": "Écrivez un script post-requête pour automatiser le débuggage."
+    "post_request_script": "Écrivez un script post-requête pour automatiser le débuggage.",
+    "collection_properties_scripts": "Ces scripts s'exécuteront pour chaque requête de cette collection. Les scripts de pré-requête s'exécutent avant la requête, les scripts de test s'exécutent après la réponse."
   },
   "hide": {
     "collection": "Masquer le panneau des collections",
@@ -714,7 +927,12 @@
       "explanation": "Ceci est une fonctionnalité de sécurité qui empêche les pages web d'émettre des requêtes depuis des domaines différents. Vous pouvez réessayer en utilisant notre service de proxy pour contourner cette restriction.",
       "url_label": "URL tentée",
       "retry_with_proxy": "Réessayer avec le proxy"
-    }
+    },
+    "import_scripts": "Importer des scripts",
+    "import_scripts_description": "Prend en charge Postman Collection v2.0/v2.1.",
+    "import_summary_script_found": "script trouvé mais non importé",
+    "import_summary_scripts_found": "scripts trouvés mais non importés",
+    "import_summary_enable_experimental_sandbox": "Pour importer des scripts Postman, activez « Bac à sable de scriptage expérimental » dans les paramètres. Remarque : cette fonctionnalité est expérimentale."
   },
   "instances": {
     "switch": "Changer d'instance Hoppscotch",
@@ -725,7 +943,29 @@
     "add_new": "Ajouter une nouvelle instance",
     "confirm_remove": "Confirmer la suppression",
     "remove_warning": "Voulez-vous vraiment supprimer cette instance ?",
-    "clear_cached_bundles": "Vider les paquets dans le cache"
+    "clear_cached_bundles": "Vider les paquets dans le cache",
+    "opening_add_modal": "Ouverture de la boîte de dialogue d'ajout d'instance",
+    "closed_add_modal": "Boîte de dialogue d'ajout d'instance fermée",
+    "cancelled_removal": "Suppression de l'instance annulée",
+    "connection_cancelled": "Connexion annulée par la validation de pré-connexion",
+    "post_connect_completed": "Configuration post-connexion terminée",
+    "connecting": "Connexion à l'instance...",
+    "confirm_removal": "Confirmer la suppression de l'instance",
+    "removal_cancelled": "Suppression de l'instance annulée par la validation de pré-suppression",
+    "post_remove_completed": "Nettoyage post-suppression terminé",
+    "removing": "Suppression de l'instance...",
+    "clearing_cache": "Nettoyage du cache...",
+    "initialized": "Sélecteur d'instances initialisé",
+    "connecting_state": "Établissement de la connexion...",
+    "connected_state": "Connexion à l'instance réussie",
+    "disconnected_state": "Déconnecté de l'instance",
+    "stream_error": "Échec de la surveillance de l'état de la connexion",
+    "recent_instances_error": "Échec du chargement des instances récentes",
+    "instance_changed": "Basculé vers l'instance",
+    "current_instance_error": "Échec du suivi de l'instance actuelle",
+    "not_available": "Le changement d'instance n'est pas disponible",
+    "cleanup_completed": "Nettoyage du sélecteur d'instances terminé",
+    "self_hosted": "Instances auto-hébergées"
   },
   "inspections": {
     "description": "Inspecter les erreurs possibles",
@@ -759,6 +999,13 @@
     },
     "body": {
       "binary": "L'envoi de données binaires via l'intercepteur actuel n'eset pas encore géré."
+    },
+    "scripting_interceptor": {
+      "pre_request": "script de pré-requête",
+      "post_request": "script de post-requête",
+      "both_scripts": "scripts de pré-requête et de post-requête",
+      "unsupported_interceptor": "Votre {scriptType} utilise {apiUsed}. Pour une exécution fiable des scripts, passez à l'intercepteur Agent (application web) ou à l'intercepteur Native (application de bureau). L'intercepteur {interceptor} prend en charge le scriptage des requêtes de manière limitée et peut ne pas fonctionner comme prévu.",
+      "same_origin_csrf_warning": "Avertissement de sécurité : votre {scriptType} effectue des requêtes de même origine en utilisant {apiUsed}. Comme cette plateforme utilise une authentification basée sur les cookies, ces requêtes incluent automatiquement vos cookies de session, ce qui peut permettre à des scripts malveillants d'effectuer des actions non autorisées. Utilisez l'intercepteur Agent pour les requêtes de même origine, ou n'exécutez que des scripts de confiance."
     }
   },
   "interceptor": {
@@ -840,7 +1087,8 @@
     "rest": "REST",
     "settings": "Paramètres",
     "goto_app": "Aller à l'application",
-    "authentication": "Authentification"
+    "authentication": "Authentification",
+    "mock_servers": "Serveurs Mock"
   },
   "preRequest": {
     "javascript_code": "Code JavaScript",
@@ -923,7 +1171,11 @@
     "url_placeholder": "Entrer une URL ou coller une commande cURL",
     "variables": "Variables",
     "view_my_links": "Voir mes liens",
-    "generate_name_error": "Impossible de générer un nom de requête."
+    "generate_name_error": "Impossible de générer un nom de requête.",
+    "rest_in_gql_collection": "Ceci est une requête REST — ouvrez-la depuis l'espace de travail REST",
+    "new_gql": "Nouvelle requête GraphQL",
+    "switch_protocol": "Changer de protocole",
+    "try": "Essayer"
   },
   "response": {
     "audio": "Audio",
@@ -952,7 +1204,8 @@
     "generate_data_schema": "Générer le schéma de données",
     "data_schema": "Schéma de données",
     "saved": "Réponse enregistrée",
-    "invalid_name": "Veuillez renseigner un nom pour la réponse"
+    "invalid_name": "Veuillez renseigner un nom pour la réponse",
+    "save_as_example": "Enregistrer comme exemple"
   },
   "settings": {
     "accent_color": "Couleur d'accentuation",
@@ -1063,7 +1316,48 @@
     "ca_certificates": "Certificats de l'autorité certifiante",
     "ca_certificates_support": "Hoppscotch prend en charge les fichiers .crt, .cer ou .pem contenant un ou plusieurs certificats.",
     "proxy_capabilities": "L'agent Hoppscotch prend en charge les proxy HTTP/HTTPS/SOCKS avec NLTM et l'authentification basique (Basic) pour ces proxy. Le nom d'utilisateur et le mot de passe doivent être passés en paramètre de l'URL elle-même pour l'authentification via proxy.",
-    "proxy_auth": "Vous pouvez aussi inclure le nom d'utilisateur et le mot de passe dans l'URL."
+    "proxy_auth": "Vous pouvez aussi inclure le nom d'utilisateur et le mot de passe dans l'URL.",
+    "desktop": "Bureau",
+    "desktop_connection": "Connexion",
+    "desktop_description": "Modifiez le comportement, les délais de connexion, la gestion du clavier et les préférences d'affichage de l'application de bureau Hoppscotch.",
+    "desktop_display": "Affichage",
+    "desktop_keyboard": "Clavier",
+    "desktop_keyboard_strategy_label": "Associer les raccourcis par lettre saisie ou par position physique",
+    "desktop_keyboard_strategy_description": "Sur les dispositions non QWERTY, une même lettre peut provenir de touches physiques différentes. Le réglage par défaut convient à la plupart des dispositions ; changez d'option si les raccourcis ne fonctionnent pas comme prévu sur la vôtre.",
+    "desktop_keyboard_strategy_hybrid": "Intelligent (recommandé)",
+    "desktop_keyboard_strategy_hybrid_description": "Utilise la lettre saisie pour les caractères latins ; revient à la position physique de la touche pour les dispositions non latines (cyrillique, CJK).",
+    "desktop_keyboard_strategy_key": "Lettre saisie",
+    "desktop_keyboard_strategy_key_description": "Utilise toujours la lettre saisie. Choisissez cette option si les raccourcis ne fonctionnent pas comme prévu sur votre disposition.",
+    "desktop_keyboard_strategy_code": "Position physique de la touche",
+    "desktop_keyboard_strategy_code_description": "Utilise toujours la position physique US-QWERTY. Choisissez cette option si vous avez la mémoire musculaire QWERTY sur une disposition non latine.",
+    "desktop_updates": "Mises à jour",
+    "disable_update_checks": "Désactiver la vérification automatique des mises à jour",
+    "disable_update_checks_description": "Ignore la vérification des mises à jour au démarrage de l'application. Utilisez le bouton ci-dessus pour vérifier à la demande.",
+    "connection_timeout": "Délai de connexion",
+    "connection_timeout_description": "Durée d'attente de la réponse de votre instance. Le téléchargement d'une instance autorise dix fois cette limite. Redémarrez l'application pour que la modification soit prise en compte lors du téléchargement.",
+    "connection_timeout_seconds": "{seconds} secondes",
+    "connection_timeout_seconds_default": "{seconds} secondes (par défaut)",
+    "zoom_level": "Niveau de zoom",
+    "zoom_level_description": "Met à l'échelle toute l'interface. Des valeurs plus élevées agrandissent le texte et les contrôles sur les écrans haute résolution.",
+    "zoom_level_100": "100 %",
+    "zoom_level_110": "110 %",
+    "zoom_level_125": "125 %",
+    "zoom_level_150": "150 %",
+    "profile_photo": "Photo de profil",
+    "proxy_url_invalid": "L'URL du proxy doit commencer par http(s):// et ne contenir aucun espace",
+    "enable_experimental_mock_servers": "Activer les Mock Servers",
+    "enable_experimental_documentation": "Activer la Documentation",
+    "enable_gql_in_rest_workspace": "Activer l'espace de travail GraphQL unifié",
+    "update_check_description": "Vérifiez manuellement la disponibilité d'une nouvelle version et installez-la. Fonctionne indépendamment de l'option ci-dessous.",
+    "update_check_now": "Rechercher des mises à jour",
+    "update_checking": "Vérification…",
+    "update_download_version": "Télécharger v{version}",
+    "update_downloading": "Téléchargement…",
+    "update_downloading_percent": "Téléchargement {percent} %",
+    "update_installing": "Installation…",
+    "update_restart_now": "Redémarrer pour appliquer la mise à jour",
+    "update_up_to_date": "À jour",
+    "follow_redirects": "Suivre les redirections"
   },
   "shared_requests": {
     "button": "Bouton",
@@ -1107,7 +1401,8 @@
     "request": "Requêter",
     "show_more": "Afficher plus",
     "title": "Requêtes partagées",
-    "url": "URL"
+    "url": "URL",
+    "auth_warning": "Cette requête contient des identifiants d'authentification. Toute personne disposant du lien de partage pourra les lire — y compris les tokens, mots de passe et clés API."
   },
   "shortcut": {
     "general": {
@@ -1115,7 +1410,11 @@
       "command_menu": "Menu de recherche et des commandes",
       "help_menu": "Menu d'aide",
       "show_all": "Raccourcis clavier",
-      "title": "Général"
+      "title": "Général",
+      "comment_uncomment": "Commenter/Décommenter",
+      "close_tab": "Fermer l'onglet",
+      "undo": "Annuler",
+      "redo": "Rétablir"
     },
     "miscellaneous": {
       "invite": "Inviter des personnes sur Hoppscotch",
@@ -1153,7 +1452,8 @@
       "send_request": "Envoyer la requête",
       "share_request": "Partager la requête",
       "show_code": "Générer l'extrait de code",
-      "title": "Requête"
+      "title": "Requête",
+      "focus_url": "Activer la barre d'URL"
     },
     "response": {
       "copy": "Copier la réponse dans le presse-papiers",
@@ -1168,7 +1468,9 @@
       "next_tab": "Onglet suivant",
       "previous_tab": "Onglet précédent",
       "first_tab": "Basculer vers le premier onglet",
-      "last_tab": "Basculer vers le dernier onglet"
+      "last_tab": "Basculer vers le dernier onglet",
+      "mru_switch": "Passer à l'onglet récent (MRU)",
+      "mru_switch_reverse": "Passer à l'onglet récent précédent (MRU)"
     },
     "theme": {
       "black": "Basculer le thème en mode noir",
@@ -1265,7 +1567,9 @@
       "previous": "Basculer vers l'onglet précédent",
       "switch_to_first": "Basculer vers le premier onglet",
       "switch_to_last": "Basculer vers le dernier onglet",
-      "title": "Onglets"
+      "title": "Onglets",
+      "mru_switch": "Passer à l'onglet récent",
+      "mru_switch_reverse": "Passer à l'onglet récent précédent"
     },
     "workspace": {
       "delete": "Supprimer l'espace de travail actuel",
@@ -1436,7 +1740,9 @@
     "users_to_admin_success": "Les utilisateurs sélectionnés ont été promus administrateur.",
     "users_to_admin_failure": "Impossible de promouvoir administrateur les utilisateurs sélectionnés.",
     "loading_workspaces": "Chargement des espaces de travail",
-    "loading_collections_in_workspace": "Chargement des collections de l'espace de travail"
+    "loading_collections_in_workspace": "Chargement des collections de l'espace de travail",
+    "experimental": "Expérimental",
+    "no_content_found": "Aucun contenu trouvé"
   },
   "support": {
     "changelog": "En savoir plus sur les dernières mises à jour",
@@ -1478,7 +1784,9 @@
     "websocket": "WebSocket",
     "all_tests": "Tests",
     "passed": "Réussi",
-    "failed": "Échoué"
+    "failed": "Échoué",
+    "scripts": "Scripts",
+    "mock_servers": "Mock Servers"
   },
   "team": {
     "activity_logs": "Journalisation d'activités",
@@ -1569,7 +1877,8 @@
     "new_run": "Nouvelle exécution",
     "iterations": "Itérations",
     "duration": "Durée",
-    "avg_resp": "Temps de réponse moyen"
+    "avg_resp": "Temps de réponse moyen",
+    "running": "Exécution des tests..."
   },
   "websocket": {
     "communication": "Communication",
@@ -1639,7 +1948,41 @@
     "cli_command_generation_description_sh_with_server_url_placeholder": "Copiez la commande ci-dessous et lancez-la depuis un terminal (CLI). Veuillez spécifier le jeton d'authentification personnel et l'URL de l'instance de serveur SH.",
     "run_collection": "Exécuter la collection",
     "no_passed_tests": "Aucun test réussi",
-    "no_failed_tests": "Aucun test échoué"
+    "no_failed_tests": "Aucun test échoué",
+    "iterations": "Itérations",
+    "time": "fois",
+    "times": "fois",
+    "invalid_iterations": "Le nombre d'itérations doit être au moins 1",
+    "data_feed": "Flux de données",
+    "data_feed_help": "Importez un fichier CSV ou JSON pour exécuter une itération par ligne.",
+    "select_data_file": "Sélectionner un fichier CSV / JSON",
+    "data_preview": "Aperçu des données",
+    "dataset_row": "{count} ligne",
+    "dataset_rows": "{count} lignes",
+    "dataset_preview_truncated": "Affichage des {count} premières lignes du jeu de données.",
+    "dataset_iterations_info": "Le jeu de données contient {rows} lignes, exécution de {total} itérations selon votre configuration.",
+    "iterations_locked_to_dataset": "Les itérations correspondent au nombre de lignes du jeu de données. Supprimez le fichier de données pour définir cette valeur manuellement.",
+    "jump_to_iteration": "Aller à l'itération",
+    "previous_iteration": "Itération précédente",
+    "next_iteration": "Itération suivante",
+    "invalid_data_file": "Fichier de données invalide",
+    "empty_data_file": "Le fichier de données est vide",
+    "data_file_size_limit_exceeded": "Le fichier de données dépasse la limite de {sizeLimit} Mo",
+    "collection_load_failed": "Impossible de charger cette collection.",
+    "filter_requests": "Filtrer les requêtes",
+    "no_requests_match_filter": "Aucune requête ne correspond au filtre",
+    "selection_reset": "La collection a changé, toutes les requêtes seront donc exécutées.",
+    "selection_partially_reset": "Certaines requêtes sélectionnées n'existent plus et ont été retirées de la sélection.",
+    "remove_file": "Supprimer le fichier",
+    "run_sequence": "Séquence d'exécution",
+    "reset_run_order": "Réinitialiser",
+    "export_results": "Exporter les résultats",
+    "select_all": "Tout sélectionner",
+    "deselect_all": "Tout désélectionner",
+    "selected_requests_count": "{selected} sur {total} sélectionnées",
+    "no_requests_selected": "Sélectionnez au moins une requête à exécuter",
+    "iteration": "Itération {count}",
+    "results_not_restored": "Les résultats d'exécution ne sont pas conservés après un rechargement. Exécutez à nouveau la collection pour les voir."
   },
   "ai_experiments": {
     "generate_request_name": "Générer un nom de requête avec l'IA",
@@ -1924,7 +2267,9 @@
     "delete_account_description": "Cette action va supprimer toutes les données associées à votre compte Hoppscotch, incluant vos données dans cette organisation et dans celles dont vous faites partie.",
     "delete_account": "Supprimer le compte Hoppscotch",
     "user_deletion_failed_sole_admin": "L'utilisateur est l'unique administrateur d'une ou plusieurs organisations. Veuillez rétrograder l'utilisateur avant de retenter sa suppression.",
-    "user_deletion_failed_sole_team_owner": "L'utilisateur est l'unique administrateur d'une ou plusieurs organisations. Veuillez transférer le droit de propriété ou supprimez les organisations associées à l'utilisateur avant de retenter sa suppression."
+    "user_deletion_failed_sole_team_owner": "L'utilisateur est l'unique administrateur d'une ou plusieurs organisations. Veuillez transférer le droit de propriété ou supprimez les organisations associées à l'utilisateur avant de retenter sa suppression.",
+    "no_organizations": "Vous n'êtes membre d'aucune organisation",
+    "admin": "Admin"
   },
   "billing": {
     "confirm": {
@@ -1936,5 +2281,162 @@
   "app_console": {
     "entries": "Entrées console",
     "no_entries": "Aucune entrée"
+  },
+  "file_upload": {
+    "choose_file": "Choisir un fichier",
+    "max_size_format": "5 Mo maximum. Formats pris en charge : JPEG, PNG, GIF, WebP",
+    "profile_photo_updated": "Photo de profil mise à jour avec succès",
+    "profile_photo_removed": "Photo de profil supprimée avec succès",
+    "org_logo_updated": "Logo de l'organisation mis à jour avec succès",
+    "error_size_limit": "La taille du fichier doit être inférieure à 5 Mo",
+    "error_invalid_format": "Le fichier doit être une image (JPEG, PNG, GIF ou WebP)",
+    "error_invalid_upload_type": "Type de téléversement invalide",
+    "error_invalid_org_id": "Format d'identifiant d'organisation invalide",
+    "error_upload_failed": "Échec du téléversement. Veuillez réessayer",
+    "error_network_failed": "Erreur réseau. Veuillez vérifier votre connexion",
+    "error_timeout": "Le téléversement a expiré après 30 secondes. Veuillez réessayer",
+    "error_missing_backend_url": "L'URL du backend n'est pas configurée. Veuillez définir la variable d'environnement VITE_BACKEND_API_URL dans vos paramètres d'environnement",
+    "error_invalid_backend_url": "Configuration d'URL backend invalide"
+  },
+  "mock_server": {
+    "confirm_delete_log": "Êtes-vous sûr de vouloir supprimer ce journal ?",
+    "create_mock_server": "Configurer le serveur Mock",
+    "mock_server_configuration": "Configuration du serveur Mock",
+    "mock_server_name": "Nom du serveur Mock",
+    "mock_server_name_placeholder": "Saisir le nom du serveur mock",
+    "base_url": "URL de base",
+    "start_server": "Démarrer le serveur",
+    "stop_server": "Arrêter le serveur",
+    "mock_server_created": "Serveur mock créé avec succès",
+    "mock_server_started": "Serveur mock démarré avec succès",
+    "mock_server_stopped": "Serveur mock arrêté avec succès",
+    "active": "Le serveur mock est actif",
+    "inactive": "Le serveur mock est inactif",
+    "edit_mock_server": "Modifier le serveur Mock",
+    "path_based_url": "URL basée sur le chemin",
+    "subdomain_based_url": "URL basée sur le sous-domaine",
+    "mock_server_updated": "Serveur mock mis à jour avec succès",
+    "no_collection": "Aucune collection",
+    "collection_deleted": "collection associée supprimée.",
+    "private_access_hint": "Pour les serveurs mock privés, incluez l'en-tête « x-api-key » avec votre jeton d'accès personnel (créez-en un depuis votre profil).",
+    "private_access_instruction": "Pour accéder à ce serveur mock privé, incluez l'en-tête « x-api-key » avec votre jeton d'accès personnel.",
+    "create_token_here": "Créer ici",
+    "status": "Statut",
+    "server_running": "Le serveur est en cours d'exécution",
+    "server_stopped": "Le serveur est arrêté",
+    "delay_ms": "Délai de réponse (ms)",
+    "delay_placeholder": "Saisir le délai en millisecondes",
+    "delay_description": "Ajouter un délai artificiel aux réponses mock",
+    "public_access": "Accès public",
+    "public": "Public",
+    "private": "Privé",
+    "public_description": "Toute personne disposant de l'URL peut accéder à ce serveur mock",
+    "private_description": "Seuls les utilisateurs authentifiés peuvent accéder à ce serveur mock",
+    "select_collection": "Sélectionner une collection",
+    "select_collection_error": "Veuillez sélectionner une collection",
+    "invalid_collection_error": "Échec de la création d'un serveur mock pour la collection.",
+    "url_copied": "URL copiée dans le presse-papiers",
+    "make_public": "Rendre public",
+    "view_logs": "Voir les journaux",
+    "logs_title": "Journaux du serveur Mock",
+    "no_logs": "Aucun journal disponible",
+    "request_headers": "En-têtes de la requête",
+    "request_body": "Corps de la requête",
+    "response_status": "Statut de la réponse",
+    "response_headers": "En-têtes de la réponse",
+    "response_body": "Corps de la réponse",
+    "log_deleted": "Journal supprimé avec succès",
+    "description": "Les serveurs mock vous permettent de simuler des réponses API basées sur les exemples de réponses de votre collection.",
+    "set_in_environment": "Définir dans l'environnement",
+    "set_in_environment_hint": "L'URL du serveur mock sera automatiquement ajoutée comme variable « mockUrl » dans l'environnement de la collection",
+    "environment_variable_added": "URL mock ajoutée à l'environnement",
+    "environment_variable_updated": "URL mock mise à jour dans l'environnement",
+    "environment_created_with_variable": "Environnement créé avec l'URL mock",
+    "add_example_request": "Ajouter un exemple de requête",
+    "add_example_request_hint": "La collection sera créée avec un exemple de requête montrant comment utiliser le serveur mock",
+    "create_example_collection": "Créer un exemple de collection",
+    "create_example_collection_hint": "Créer un exemple de collection de animalerie avec des requêtes d'exemple (GET, POST, PUT, DELETE)",
+    "creating_example_collection": "Création de l'exemple de collection...",
+    "failed_to_create_collection": "Échec de la création de la collection d'exemple",
+    "enable_example_collection_hint": "Veuillez activer l'option « Créer une collection d'exemple » pour le mode nouvelle collection",
+    "new_collection_name_hint": "La collection sera créée avec le même nom que votre mock server",
+    "existing_collection": "Collection existante",
+    "new_collection": "Nouvelle collection"
+  },
+  "script": {
+    "inheriting": "Hérite des scripts de",
+    "inheriting_from_count": "Hérite de {count} collection | Hérite de {count} collections",
+    "inherited_scripts": "Scripts hérités",
+    "view_inherited": "Voir les scripts hérités"
+  },
+  "organization_sidebar": {
+    "hoppscotch_cloud": "Hoppscotch Cloud",
+    "cloud_locked": "L'instance par défaut ne peut pas être supprimée",
+    "admin": "Admin",
+    "error_loading": "Échec du chargement des organisations",
+    "inactive_orgs": "Organisations inactives",
+    "no_orgs_found": "Aucune organisation trouvée",
+    "no_active_orgs_found": "Aucune organisation active",
+    "organizations_for": "Organisations de {email}",
+    "multi_account_notice": "Chaque organisation conserve sa propre connexion, en utilisant le dernier compte consulté.",
+    "inactive_orgs_tooltip": "Contactez l'assistance pour obtenir de l'aide."
+  },
+  "mockServer": {
+    "create_modal": {
+      "title": "Créer un serveur mock",
+      "name_label": "Nom du serveur mock",
+      "name_placeholder": "Saisir le nom du serveur mock",
+      "name_required": "Le nom du serveur mock est requis",
+      "collection_source_label": "Source de la collection",
+      "existing_collection": "Collection existante",
+      "new_collection": "Nouvelle collection",
+      "select_collection_label": "Sélectionner une collection",
+      "select_collection_placeholder": "Choisir une collection",
+      "collection_required": "Veuillez sélectionner une collection",
+      "collection_name_label": "Nom de la collection",
+      "collection_name_placeholder": "Saisir le nom de la collection",
+      "collection_name_required": "Le nom de la collection est requis",
+      "request_config_label": "Configuration des requêtes",
+      "add_request": "Ajouter une requête",
+      "create_button": "Créer le serveur mock",
+      "success": "Serveur mock créé avec succès",
+      "error": "Échec de la création du serveur mock",
+      "no_collections": "Aucune collection disponible"
+    },
+    "edit_modal": {
+      "title": "Modifier le serveur mock",
+      "name_label": "Nom du serveur mock",
+      "name_placeholder": "Saisir le nom du serveur mock",
+      "name_required": "Le nom du serveur mock est requis",
+      "active_label": "Actif",
+      "url_label": "URL du serveur mock",
+      "collection_label": "Collection",
+      "update_button": "Mettre à jour le serveur mock",
+      "success": "Serveur mock mis à jour avec succès",
+      "error": "Échec de la mise à jour du serveur mock",
+      "url_copied": "URL copiée dans le presse-papiers"
+    },
+    "dashboard": {
+      "title": "Serveurs mock",
+      "subtitle": "Créez et gérez vos serveurs mock d'API",
+      "create_button": "Créer un serveur mock",
+      "create_first": "Créer votre premier serveur mock",
+      "empty_title": "Aucun serveur mock trouvé",
+      "empty_description": "Créez des serveurs mock à partir de vos collections d'API pour permettre le développement frontend et mobile sans dépendre du backend.",
+      "collection": "Collection",
+      "active": "Actif",
+      "inactive": "Inactif",
+      "mock_url": "URL mock",
+      "endpoints": "Endpoints",
+      "created": "Créé",
+      "view_collection": "Voir la collection",
+      "documentation": "Documentation",
+      "doc_description": "Utilisez cette URL comme URL de base de votre API dans vos applications :",
+      "url_copied": "URL du serveur mock copiée dans le presse-papiers",
+      "delete_title": "Supprimer le serveur mock",
+      "delete_description": "Êtes-vous sûr de vouloir supprimer ce serveur mock ?",
+      "delete_success": "Serveur mock supprimé avec succès",
+      "delete_error": "Échec de la suppression du serveur mock"
+    }
   }
 }
